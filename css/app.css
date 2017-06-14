@@ -104,3 +104,20 @@ h1 {
 	font-weight: 600;
 	padding: 1rem 2.5rem;
 }
+
+/* about hero CSS */
+
+.fullscreen-image-slider .orbit-image {
+  width: 100%;
+  height: 100vh;
+}
+.fullscreen-image-slider .orbit-caption {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  background: none;
+  text-align: center;
+  color: #fefefe;
+  font-weight: bold;
+}
