@@ -3,58 +3,100 @@ body {
 	background-color: #fcfcfc;
 	padding: 3rem 1rem;
 }
-
 h1 {
 	font-family: "Montserrat", Helvetica, Roboto, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 2.3rem;
 }
+.content {
+	margin: 2rem 0 5rem 0;
+}
+.active {
+	color: #7b183e;
+}
+
+/* header related CSS */
 
 .header-nav {
 	text-align: center;
 	margin-bottom: 3rem;
 }
-
 .header-nav img {
 	margin-bottom: 1rem;
 }
-
 .header-nav-subtitle {
 	font-size: 1rem;
 	letter-spacing: .05rem;
 }
-
 .header-nav-link {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .05rem;
 	color: #000;
 }
-
 .header-nav-link:hover {
 	color: #BB7676;
 }
-
-.active {
-	color: #7b183e;
+.menu-hover-lines {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+}
+.menu-hover-lines li a {
+  padding: 0.75rem 0;
+  color: rgba(10, 10, 10, 0.5);
+  position: relative;
+  margin-left: 1rem;
+}
+.menu-hover-lines li:first-child a {
+  margin-left: 0;
+}
+.menu-hover-lines li.active > a {
+  background-color: transparent;
+}
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+  height: 1px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: #000000;
+  width: 0;
+}
+.menu-hover-lines a::before {
+  top: 0;
+  left: 0;
+}
+.menu-hover-lines a::after {
+  bottom: 0;
+  right: 0;
+}
+.menu-hover-lines a:hover,
+.menu-hover-lines li.active > a {
+  color: #0a0a0a;
+  transition: all 0.35s ease;
+}
+.menu-hover-lines a:hover::before,
+.menu-hover-lines .active a::before,
+.menu-hover-lines a:hover::after,
+.menu-hover-lines .active a::after {
+  width: 100%;
 }
 
-.content {
-	margin: 2rem 0 5rem 0;
-}
+/* contact page CSS */
 
 .contact-form-field {
 	border-radius: .2rem;
 	background-color: #FCFCFC;
 	box-shadow: none;
 }
-
 .contact-form-field:focus {
 	border-color: #cacaca;
 	background-color: #FFFFFF;
 	box-shadow: none;
 }
-
 .contact-submit {
 	background-color: #000000;
 	text-transform: uppercase;
